@@ -14,3 +14,83 @@
 
 @import 'mediaQueries';
 
+* {
+    // outline: red 1px solid;
+    font-family: lato;
+}
+
+a {
+    cursor: pointer;
+}
+
+/*Navbar*/
+.navbar {
+    background-color: $red;
+    color: $secondaryTextColor;
+
+    div{
+        h1 {
+            left: 50px;
+        }
+
+        .nav-icon-container {
+            width: 120px;
+        }
+    }
+}
+
+/*POKESEARCH*/
+.poke-search {
+
+    form {
+        input {
+            border: 0;
+            border-bottom: 1px solid $primaryTextColor;
+        }
+
+        button {
+            background: content-box;
+            border: 0;
+            img {
+                width: 32px;
+            }
+        }
+    }
+}
+
+/*POKEMON CARD*/
+h4.text-left {
+    width: 60px;
+}
+
+.pokemon-card {
+    width: 350px;
+    overflow: hidden;
+
+    .pokeball-card {
+        top: -125px;
+        width: 500px;
+        height: 350px;
+        z-index: -1;
+        background-color: $darkRed;
+    }
+
+    .info {
+        z-index: 2;
+    }
+
+    .pokemon-image-container {
+        width: 250px;
+        height: 250px;
+        
+        img {
+            width: 250px;
+        }
+    }
+
+    .stat-type {
+        color: gray;
+    }
+}
+
+/*POKEMON PAGINATION*/

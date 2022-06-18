@@ -9,21 +9,26 @@ const PokeSearch = () => {
     const onSubmit = (e) => {
         e.preventDefault()
         setBaseUrl(`https://pokeapi.co/api/v2/pokemon/${search.toLowerCase()}`)
+        setSearch('')
     };
     return ( 
-        <div className="poke-search">
-            <form onSubmit={onSubmit}>
+        <div className="poke-search mt-2">
+            <form className="d-flex justify-space-around align-center ml-2 mr-2" onSubmit={onSubmit}>
                 <input 
                     placeholder="Search the Pokedex.."
-                    className="w-90 p-2 m-2 input-style text-center"
+                    className="w-90 p-2 input-style"
                     type="text" 
                     required 
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                 />
-                <button>Submit</button>
+                <button className="p-2">
+                    <img src="./imgs/blackSearch.png" alt="" />
+                </button>
             </form>
-            {data && <PokemonCard data={data} baseUrl={baseUrl} />}
+            <div className="d-flex justify-center">
+                {data && <PokemonCard data={data} baseUrl={baseUrl} />}
+            </div>
         </div>
      );
 }

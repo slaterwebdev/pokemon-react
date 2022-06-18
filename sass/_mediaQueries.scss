@@ -1,1 +1,8 @@
 //MEDIA QUERIES
+@media screen and (max-width: 430px) {
+    .App {
+        div {
+            width: 100%;
+        }
+    }
+}

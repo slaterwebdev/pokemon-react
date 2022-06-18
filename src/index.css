@@ -53,6 +53,10 @@
   font-family: "Lato", sans-serif !important;
 }
 
+.color-white {
+  color: white;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -620,5 +624,75 @@
 .bottom-100 {
   bottom: 100%;
 }
+
+@media screen and (max-width: 430px) {
+  .App div {
+    width: 100%;
+  }
+}
+* {
+  font-family: lato;
+}
+
+a {
+  cursor: pointer;
+}
+
+/*Navbar*/
+.navbar {
+  background-color: rgb(193, 35, 45);
+  color: white;
+}
+.navbar div h1 {
+  left: 50px;
+}
+.navbar div .nav-icon-container {
+  width: 120px;
+}
+
+/*POKESEARCH*/
+.poke-search form input {
+  border: 0;
+  border-bottom: 1px solid #2e2d2d;
+}
+.poke-search form button {
+  background: content-box;
+  border: 0;
+}
+.poke-search form button img {
+  width: 32px;
+}
+
+/*POKEMON CARD*/
+h4.text-left {
+  width: 60px;
+}
+
+.pokemon-card {
+  width: 350px;
+  overflow: hidden;
+}
+.pokemon-card .pokeball-card {
+  top: -125px;
+  width: 500px;
+  height: 350px;
+  z-index: -1;
+  background-color: rgb(178, 19, 37);
+}
+.pokemon-card .info {
+  z-index: 2;
+}
+.pokemon-card .pokemon-image-container {
+  width: 250px;
+  height: 250px;
+}
+.pokemon-card .pokemon-image-container img {
+  width: 250px;
+}
+.pokemon-card .stat-type {
+  color: gray;
+}
+
+/*POKEMON PAGINATION*/
 
 /*# sourceMappingURL=index.css.map */
