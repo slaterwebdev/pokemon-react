@@ -46,7 +46,7 @@ a {
         input {
             border: 0;
             border-bottom: 1px solid $primaryTextColor;
-            font-size: 16px;
+            font-size: 16px !important;
         }
 
         button {
