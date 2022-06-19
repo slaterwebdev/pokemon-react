@@ -1,7 +1,5 @@
-const PokemonCard = ({ data , baseUrl }) => {
-    const pokemonName = baseUrl.slice(34).charAt(0).toUpperCase() + baseUrl.slice(35);
+const PokemonCard = ({ data }) => {
     const pokemonImage = data.sprites.front_default;
-
     const firstLetterCap = (element) => {
        return element.charAt(0).toUpperCase() + element.slice(1);
     };
@@ -11,10 +9,10 @@ const PokemonCard = ({ data , baseUrl }) => {
             <div className="pokeball-card pos-absolute left-0"></div>
 
             <div className="info">
-                <h2 className="br-sm mt-3 color-white">{pokemonName}</h2>
+                <h2 className="br-sm mt-3 color-white">{firstLetterCap(data.name)}</h2>
                 <h3 className="color-white">XP:{data.base_experience}</h3>
                 <div className="pokemon-image-container m-auto overflow-hidden mb-2">
-                <img src={pokemonImage} alt={pokemonName} />
+                <img src={pokemonImage} alt="" />
                 </div>
 
                 <div className="poke-stats">

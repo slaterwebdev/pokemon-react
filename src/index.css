@@ -57,6 +57,14 @@
   color: white;
 }
 
+.color-grey {
+  color: rgb(148, 147, 147);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -694,5 +702,12 @@ h4.text-left {
 }
 
 /*POKEMON PAGINATION*/
+.page-numbers:hover {
+  color: rgb(178, 19, 37);
+}
+
+.page-number-clicked {
+  text-decoration: underline 1px solid red;
+}
 
 /*# sourceMappingURL=index.css.map */
